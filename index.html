@@ -27,76 +27,25 @@
 </head>
 <body>
   
-  <div class="container">
-    
-    <div class="card border-primary mt-3 text-center">
-      <div class="card-header">
-        <h3 class="card-title">Conversor de Temperatura</h3>
-      </div>
-      <div class="card-body">
-        <div class="row">
-          <div class="col">
-            <p class="card-text">Informe a temperatura a ser convertida.</p>
-          </div>
-        </div>
-        
-        <div class="row mt-3">
-          <div class="col">
-            <label class="sr-only" for="inValue">Temperatura</label>
-            <div class="input-group mr-2">
-              <input  id="valorIn" type="number" step="0.01" class="form-control" placeholder="Temperatura">
-              <div class="input-group-append">
-                <div id="simboloIn" class="input-group-text">C</div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col">
-            <select id="seletorIn" class="form-control">
-              <option value="c" selected>Celsius</option>
-              <option value="f">Fahrenheit</option>
-              <option value="k">Kelvin</option>
-            </select>
-          </div>
-        </div>
-        
-        <hr>
-        
-        <div class="row">
-          <div class="col">
-            <label class="sr-only" for="outValue">Resultado</label>
-            <div class="input-group mr-2">
-              <input id="valorOut" type="number" step="0.01" class="form-control" disabled>
-              <div class="input-group-append">
-                <div id="simboloOut" class="input-group-text">F</div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col">
-            <select id="seletorOut" class="form-control">
-              <option value="c" selected>Celsius</option>
-              <option value="f">Fahrenheit</option>
-              <option value="k">Kelvin</option>
-            </select>
-          </div>
-          
-        </div>
-        
-        <div class="row mt-3">
-          <div class="col-6 offset-3 text-center">
-            <button id="calcular" type="button" class="btn btn-block">Calcular</button>
-          </div>
-        </div>
-        
-        <div class="row-mt">
-          <div>Icons made by <a href="https://www.flaticon.com/authors/hirschwolf" title="hirschwolf">hirschwolf</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-        </div>
-      </div>
-    </div>
-    
-  </div>
+  <div style="text-align: center; width: 300px; margin: 0 auto;">
+    <h1>
+        SQLite!
+    </h1>
+
+    <button style="padding: 30px; font-size: 20px;" onclick="addData()">Add</button>
+    <br>
+    <br>
+    <button style="padding: 30px; font-size: 20px;" onclick="removeData()">remove</button>
+    <br>
+    <br>
+    <button style="padding: 30px; font-size: 20px;" onclick='listData()'>list</button>
+    <br>
+    <br>
+    <button style="padding: 30px; font-size: 20px;" onclick="updateData()">update</button>
+
+</div>
   
+<script src="./sqlite.js"></script>
   <script>
     //This is the "Offline copy of pages" service worker
     
